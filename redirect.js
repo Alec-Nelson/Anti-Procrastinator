@@ -1,3 +1,3 @@
-$( document ).ready(function() {
-    window.location.href = "https://www.google.com/";
-});
+  chrome.storage.sync.get("url", function(items) {
+    window.location.href = items.url;
+  });
