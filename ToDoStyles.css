@@ -1,0 +1,148 @@
+body
+{
+  font-family: "Garamond", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 100%;
+  width: 300px;
+  background-color: lightblue;
+          border: 3px inset MediumTurquoise;
+          margin: 0%;
+  /*background-image: url("img/newZealand.jpg");*/
+  /*background-attachment: fixed;*/
+  /*background-position: top-right;*/
+}
+h1
+{
+  /*text-shadow: 2px 2px 0 rgba(0,255,180,0.5);*/
+  font-family: garamond, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: darkblue;
+  text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+div#wrapper
+{
+  margin-left: 5%;
+  color: DarkBlue;
+}
+button
+{
+  border: 1px solid #003366;
+  border-radius: 5px;
+  display: inline;
+  background-color: #0099cc;
+  color: white;
+}
+button#clearButton
+{
+  float: right;
+  margin-right: 20%;
+}
+button:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      background-color: teal;
+      color: cyan;
+}
+input#inputText
+{
+      background: white;
+      border: 1px solid #003366;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px #003366;
+  color: #666;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-family: garamond;
+  text-indent: 5px;
+  width: 225px;
+}
+input[type=checkbox] {
+  /*margin-left: 12px;*/
+  /*float: right;*/
+  margin-left: 12px;
+}
+li {
+  cursor: pointer;
+}
+li:hover{
+  color: black;
+  text-shadow: 0px 0px 2px purple;
+}
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    /*font: 15px 'trebuchet MS', 'lucida sans';*/
+    /*padding: 0;*/
+    /*margin-bottom: 4em;*/
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+.rounded-list li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    /*background: lightgrey;*/
+    /*background: #3cd1e5;*/
+    background: #eee;
+    /*color: #444;*/
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+}
+
+.rounded-list li:hover{
+    /*background: #eee;*/
+    background: #3cd1e5;
+
+}
+
+.rounded-list li:hover:before{
+    transform: rotate(360deg);
+}
+
+.rounded-list li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+/*     {
+  /* avoid an excessively wide status text */
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 500px;
+}

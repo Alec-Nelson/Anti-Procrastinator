@@ -11,6 +11,10 @@
     "default_popup": "popup.html"
   },
 
+  "chrome_url_overrides" : {
+    "newtab": "redirect.html"
+  },
+
   /*"background": {
     "scripts": ["anti-proc.js"]
   },*/
