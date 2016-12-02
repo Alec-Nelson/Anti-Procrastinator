@@ -1,0 +1,22 @@
+
+{
+  "manifest_version": 2,
+
+  "name": "Anti-Procrastinator",
+  "description": "This Extension allows you to be redirected to a more productivity friendly page.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "attention.png",
+    "default_popup": "popup.html"
+  },
+
+  /*"background": {
+    "scripts": ["anti-proc.js"]
+  },*/
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

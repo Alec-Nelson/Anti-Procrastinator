@@ -1,0 +1,25 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="ToDoStyles.css"> -->
+  <title>Redirect to This Page</title>
+  <!-- <script src="popup.js"></script> -->
+</head>
+<body>
+  <div id="wrapper">
+	<h1>Redirect to This Page</h1>
+  <ol id="list" class="rounded-list">
+  </ol>
+  <div id="nextText">
+    <input id = "inputText" type="text" placeholder="Enter URL"/>
+  </div>
+<button id="enterButton"> Enter </button>
+<!-- <button id="clearButton"> Clear All Entries </button> -->
+  </div>
+</body>
+</html>
